@@ -53,7 +53,7 @@ TPL;
 /**
  * @property {user_identities} \$identity
  */
-class User extends \yii\web\User {
+class User extends {user_class} {
 }
 TPL;
     }
@@ -66,6 +66,8 @@ TPL;
 
         $components = [];
         $userIdentities = [];
+
+        $userClass = '\\yii\\web\\User';
 
         foreach (\Yii::$app->requestedParams as $configPath) {
             if (!file_exists($configPath)) {
@@ -87,6 +89,10 @@ TPL;
                     continue;
                 }
 
+                if($name === 'user') {
+                    $userClass = $component['class'];
+                }
+
                 $components[$name][] = $component['class'];
             }
         }
@@ -99,8 +105,8 @@ TPL;
 
             $userIdentities = implode('|', array_unique($userIdentities));
             $userStubs = str_replace(
-                '{user_identities}',
-                $userIdentities,
+                ['{user_identities}', '{user_class}'],
+                [$userIdentities, $userClass],
                 $this->getUserTemplate()
             );
         }

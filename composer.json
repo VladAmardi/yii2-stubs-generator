@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "vlad-amardi\\stubsgenerator\\": ""
+            "VladAmardi\\stubsgenerator\\": ""
         }
     }
 }
