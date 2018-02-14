@@ -2,6 +2,7 @@
     "name": "vlad-amardi/yii2-stubs-generator",
     "description": "Yii2 component stubs generator for Yii::$app",
     "type": "yii2-extension",
+    "version": "1.0.0",
     "keywords": ["yii2", "stubs", "autocomplete", "phpstorm"],
     "license": "MIT",
     "authors": [
