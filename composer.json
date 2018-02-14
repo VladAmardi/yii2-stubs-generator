@@ -1,5 +1,5 @@
 {
-    "name": "VladAmardi/yii2-stubs-generator",
+    "name": "vlad-amardi/yii2-stubs-generator",
     "description": "Yii2 component stubs generator for Yii::$app",
     "type": "yii2-extension",
     "keywords": ["yii2", "stubs", "autocomplete", "phpstorm"],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "VladAmardi\\stubsgenerator\\": ""
+            "vlad-amardi\\stubsgenerator\\": ""
         }
     }
 }
