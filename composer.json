@@ -1,13 +1,13 @@
 {
-    "name": "bazilio/yii2-stubs-generator",
+    "name": "VladAmardi/yii2-stubs-generator",
     "description": "Yii2 component stubs generator for Yii::$app",
     "type": "yii2-extension",
     "keywords": ["yii2", "stubs", "autocomplete", "phpstorm"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Vasily Ostanin",
-            "email": "bazilio91@gmail.com"
+            "name": "Vlad Amardi",
+            "email": "vlad.amardi@gmail.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "bazilio\\stubsgenerator\\": ""
+            "VladAmardi\\stubsgenerator\\": ""
         }
     }
 }
